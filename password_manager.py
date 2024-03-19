@@ -106,7 +106,7 @@ def show_account(key):
         print(f"Account Website: {find_website}")
         print(f"Account Email: {find_email}")
         print(f"Account Password: {decrypted_password}")
-    except(UnboundLocalError):
+    except(UnboundLocalError, IndexError):
         print("Invalid account name. Going back to menu.")
 
 def show_all_accounts():
